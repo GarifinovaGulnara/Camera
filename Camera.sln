@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camera.Android", "Camera\Camera.Android\Camera.Android.csproj", "{3222CAD2-E40B-4C49-BDA4-B14F37C478B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camera", "Camera\Camera\Camera.csproj", "{F54BE306-B9AC-446E-AABE-9AB96B5D9560}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3222CAD2-E40B-4C49-BDA4-B14F37C478B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3222CAD2-E40B-4C49-BDA4-B14F37C478B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3222CAD2-E40B-4C49-BDA4-B14F37C478B2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3222CAD2-E40B-4C49-BDA4-B14F37C478B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3222CAD2-E40B-4C49-BDA4-B14F37C478B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3222CAD2-E40B-4C49-BDA4-B14F37C478B2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F54BE306-B9AC-446E-AABE-9AB96B5D9560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F54BE306-B9AC-446E-AABE-9AB96B5D9560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F54BE306-B9AC-446E-AABE-9AB96B5D9560}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F54BE306-B9AC-446E-AABE-9AB96B5D9560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F54BE306-B9AC-446E-AABE-9AB96B5D9560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F54BE306-B9AC-446E-AABE-9AB96B5D9560}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {053FCDAB-60D2-46F9-9C8C-D55B44BFBFC2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Camera.MainPage">
+
+    <StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="GalereaBtn" Text="Галерея"/>
+            <Button x:Name="CameraBtn" Text="Камера"/>
+            <Button x:Name="AddPhoto" Text="Добавить"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
