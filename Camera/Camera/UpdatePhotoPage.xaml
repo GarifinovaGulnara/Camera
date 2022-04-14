@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Camera.UpdatePhotoPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:local="clr-namespace:Camera"
+    xmlns:pz="clr-namespace:Xamarin.Forms.PinchZoomImage;assembly=Xamarin.Forms.PinchZoomImage">
+
+
+    <NavigationPage.TitleView>
+        <Label
+            x:Name="EditConfirmIcon"
+            Margin="0,0,40,0"
+            FontFamily="MaterialIconsFont"
+            FontSize="Title"
+            HorizontalOptions="End"
+            IsVisible="false"
+            Text="&#xe876;"
+            TextColor="White"
+            VerticalOptions="CenterAndExpand">
+        </Label>
+    </NavigationPage.TitleView>
+
+    <StackLayout Margin="30,20" Spacing="10">
+        <StackLayout BackgroundColor="LightGray" Orientation="Horizontal">
+            <Entry
+                x:Name="TitleEntry"
+                FontSize="18"
+                HorizontalOptions="FillAndExpand"
+                IsEnabled="False"
+                Text="{x:Static local:UpdatePhotoPage.title}"
+                TextChanged="TextChanged" />
+            <Label
+                FontFamily="MaterialIconsFont"
+                FontSize="24"
+                HorizontalOptions="EndAndExpand"
+                Text="&#xe3c9;"
+                VerticalOptions="CenterAndExpand">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            <ImageButton />
+        </StackLayout>
+        <pz:PinchZoom>
+            <Image
+                x:Name="img"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand" />
+        </pz:PinchZoom>
+        <Button
+            x:Name="ChangePhotoBtn"
+            Clicked="ChangePhotoBtn_Clicked"
+            CornerRadius="20"
+            HorizontalOptions="CenterAndExpand"
+            Text="Изменить фотографию"
+            VerticalOptions="EndAndExpand" />
+        <Button
+            x:Name="SavePhotoChange"
+            Clicked="SaveChanges_Clicked"
+            CornerRadius="20"
+            HorizontalOptions="CenterAndExpand"
+            Text="Сохранить"
+            VerticalOptions="EndAndExpand" />
+    </StackLayout>
+</ContentPage>

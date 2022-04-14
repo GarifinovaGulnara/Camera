@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Camera.AddPhotoPage">
+
+    <StackLayout>
+        <StackLayout BackgroundColor="SkyBlue" HorizontalOptions="FillAndExpand" Padding="20">
+            <Label FontFamily="MaterialIconsFont" Text="Назад" TextColor="White" HorizontalOptions="EndAndExpand">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+        <StackLayout Margin="20">
+            <Image Source="profil.png"/>
+            <Entry x:Name="NamePhoto" Placeholder="Название фото" PlaceholderColor="LightGray"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Button x:Name="GalereaBtn" Text="Галерея" BackgroundColor="SkyBlue" TextColor="White" Clicked="GalereaBtn_Clicked"/>
+            <Button x:Name="CameraBtn" Text="Камера" BackgroundColor="SkyBlue" TextColor="White" Clicked="Camera_Clicked"/>
+            <Button x:Name="AddPhoto" Text="Добавить" BackgroundColor="SkyBlue" TextColor="White" Clicked="AddPhoto_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

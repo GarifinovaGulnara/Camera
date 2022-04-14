@@ -1,20 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Camera.MainPage">
+             x:Class="Camera.MainPage"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" Visual="Material">
 
+    <StackLayout>
+        <StackLayout BackgroundColor="SkyBlue" Orientation="Horizontal" Padding="20">
+            <Label Text="Список" FontSize="18" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+            <Label FontFamily="MaterialIconsFont" Text="add" TextColor="White" FontSize="12" HorizontalOptions="EndAndExpand">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+    </StackLayout>
     <ScrollView>
         <StackLayout>
-            <ListView x:Name="ListPhoto">
+            <ListView x:Name="ListPhoto" RowHeight="500" ItemTapped="SwipeItem_Clicked_1">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            
+                            <SwipeView >
+                                <SwipeView.RightItems>
+                                        <SwipeItems>
+                                            <SwipeItem Text="удалить" BackgroundColor="Red" Clicked="SwipeItem_Clicked" CommandParameter="{Binding Id}"/>
+                                            
+                                        </SwipeItems>
+                                    </SwipeView.RightItems>
+                                    <StackLayout>
+                                        <Label Text="{Binding Title}"/>
+                                        <ff:CachedImage Source="{Binding Path}"/>
+                                    </StackLayout>
+                            </SwipeView>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
     </ScrollView>
-
+    </StackLayout>
 </ContentPage>
