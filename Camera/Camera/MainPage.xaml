@@ -3,13 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Camera.MainPage">
 
-    <StackLayout>
-
-        <StackLayout Orientation="Horizontal">
-            <Button x:Name="GalereaBtn" Text="Галерея"/>
-            <Button x:Name="CameraBtn" Text="Камера"/>
-            <Button x:Name="AddPhoto" Text="Добавить"/>
+    <ScrollView>
+        <StackLayout>
+            <ListView x:Name="ListPhoto">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
-    </StackLayout>
+    </ScrollView>
 
 </ContentPage>
